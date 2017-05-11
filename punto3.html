@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 3</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		var num1 = parseInt(window.prompt("Digite un numero"))
+		var num2 = parseInt(window.prompt("Digite otro numero"))
+		var color1 = window.prompt("Digite un color")
+		var color2 = window.prompt("Digite otro color")
+		var cambio = color1;
+	</script>	
+
+	<p id = "parrafo1" style="">
+		<script type="text/javascript">
+			document.write(num1);
+			document.getElementById("parrafo1").style.width = num1+"%";
+			document.getElementById("parrafo1").style.backgroundColor = color1;
+			document.getElementById("parrafo1").style.color = "white";
+			
+		</script>	
+	</p>
+	<p id="parrafo2">
+		<script type="text/javascript">
+			document.write(num2);
+			document.getElementById("parrafo2").style.width = num2+"%";
+			document.getElementById("parrafo2").style.backgroundColor = color2;
+			document.getElementById("parrafo2").style.color = "white";
+			
+		</script>
+	</p>
+	<button onclick="color1 = color2;
+			color2 = cambio;
+			cambio = color1;
+			document.getElementById('parrafo1').style.backgroundColor =color1 ; 
+			document.getElementById('parrafo2').style.backgroundColor = color2;"			
+			> Intercambiar colores</button>
+	
+</body>
+</html>

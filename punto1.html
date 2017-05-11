@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 1</title>
+</head>
+<body>
+	<p id = "parrafo">
+	<script type="text/javascript">
+		var prod1 = parseInt(window.prompt("Digite el precio del producto 1",""));
+		var prod2 = parseInt(window.prompt("Digite el precio del producto 2",""));
+		var prod3 = parseInt(window.prompt("Digite el precio del producto 3",""));
+
+		var total_efectivo = (prod1 + prod2 + prod3) - ((prod1 + prod2 + prod3)*0.2)  ;
+		var total_credito = (prod1 -(prod1 * 0.15) ) +prod2 + prod3;
+		var total_mas_recargo = total_credito + (total_credito *0.1);
+
+		document.write(" El total en efectivo es: " +total_efectivo+ "<br>" +"El total de credito es "+ total_credito + "<br>");
+
+
+	</script>
+	</p>
+	<button onclick="document.getElementById('parrafo').innerHTML= 'El total mas recargo es ' +total_mas_recargo">Calcular </button>
+</body>
+</html>

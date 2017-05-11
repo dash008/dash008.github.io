@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 12px;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	background:url("../../static/img/background.png");
+}
+
+header{
+	padding: 30px;
+	
+}
+
+
+/*Navbar*/
+nav{
+	width: 25%;
+	float: left;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+ul{
+	
+}
+li{
+	list-style: none;	
+
+}
+li a{
+	text-decoration: none;
+	color: black;
+}
+li a:hover{
+	background-color: black;
+	color: white;
+}
+/*content*/
+section{
+	width: 70%;
+	float: left;
+
+}
+img{
+	width: 200px;
+	height: 200px;
+	padding: 30px;
+	display: block;
+	margin: 0 auto;
+}
+p{
+	padding: 30px;
+	font-size: 20px;
+}
