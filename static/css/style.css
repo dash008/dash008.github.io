@@ -1,22 +1,57 @@
+@font-face {
+	font-family: OpenSans;
+	src: local(OpenSans), url('/static/fonts/OpenSans-Regular.ttf') format('opentype');
+}
+@font-face{
+	font-family: Raleway;
+	src: local(Raleway), url('../../static/fonts/Raleway-Regular.ttf') format('opentype');
+}
+@font-face {
+	font-family: Hind;
+	src: local(Hind), url('../../static/fonts/Hind-Regular.ttf') format('opentype');
+}
+@font-face {
+	font-family: Lobster;
+	src: local(Lobster), url('../../static/fonts/Lobster-Regular.ttf') format('opentype');
+}
+@font-face {
+	font-family: Roboto;
+	src: local(Roboto), url('../../static/fonts/Roboto-Regular.ttf') format('opentype');
+}
+
+
 *{
 	margin: 0;
 	padding: 0;
 }
+#container{
+	width: 60%;
+	margin: 20px auto;
+	background: white;
+	overflow: auto;
+	border: 5px solid black;
+	border-radius:25px;
+	padding-bottom: 20px;	
+}
 body{
-	font-size: 12px;
-	font-family: Helvetica, Arial, Verdana, sans-serif;
-	background:url("../../static/img/background.png");
+	font-size: 15px;
+	font-family: Roboto;
+	background:url("../../static/img/background.jpg");
 }
 
 header{
-	padding: 30px;
-	
+	padding: 30px 0 5px 30px;
+	font-family: Raleway;	
 }
-
+h2{
+	font-family: Raleway;
+	padding-bottom: 30px;	
+}
 
 /*Navbar*/
 nav{
-	width: 25%;
+	width: 20%;
+	height: 250px;
 	float: left;
 	padding-left: 30px;
 	padding-top: 30px;
@@ -25,12 +60,13 @@ ul{
 	
 }
 li{
-	list-style: none;	
-
+	list-style: none;
+	padding: 5px;
 }
 li a{
 	text-decoration: none;
 	color: black;
+	padding: 2px;
 }
 li a:hover{
 	background-color: black;
@@ -38,18 +74,67 @@ li a:hover{
 }
 /*content*/
 section{
-	width: 70%;
 	float: left;
-
+	width: 70%;
+	overflow: auto;
 }
 img{
-	width: 200px;
-	height: 200px;
-	padding: 30px;
-	display: block;
+	width: 80px;
+	height: 80px;
+	padding: 15px;
+	/*display: block;*/
 	margin: 0 auto;
 }
+
+#profile{
+	border-radius: 50%;	
+	width: 200px;
+	height: 200px;
+	margin: 0 0 0 200px ;	
+}
+
 p{
-	padding: 30px;
-	font-size: 20px;
+	display: block;
+}
+#personal{
+	display: block;
+	margin: 0 0 0 200px ;
+}
+
+
+input{
+	margin: 3px 5px 3px 0;
+	width:3em;
+
+
+}
+form{
+	padding: 15px 0;
+	margin:  10px auto;
+
+}
+.form_flan{
+	float:left;
+	width: 50%;
+}
+
+#banner{
+	margin: 0 auto;
+}
+
+.btn{
+	width:8em;	
+}
+#players_section{
+	margin-top: 20px;
+}
+footer{
+	margin: 0 0 0 400px ;
+    	padding-bottom: 60px;
+    	width: 30%;	
+}
+.social{
+	
+	height: 20px;
+	width: 20px;	
 }

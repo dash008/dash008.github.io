@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Numeros</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="icon" href="static/img/portfolio_2.png">	
+	<script src="static/js/numeros.js"></script>
+	
+
+</head>
+<body>
+<div id="container">
+	<header>
+		<h1>Numeros</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="juego.html">JUEGO</a></li>
+			<li><a href="numeros.html">NUMEROS</a></li>
+			<li><a href="receta.html">RECETA</a></li>
+		</ul>
+	</nav>
+	<section>
+		<h2>Calculos con numeros </h2>
+		<h3>(Ingresa 5 numeros de uno en uno)</h3>
+		<div id="banner">
+			<img src="static/img/num1.png" alt="Uno">
+			<img src="static/img/num2.png" alt="Dos">
+			<img src="static/img/num3.png" alt="Tres">
+			<img src="static/img/num4.png" alt="Cuatro">
+		</div>		
+		
+		Numero a ingresar:  <input type="text" name="camponumeros" id="field">
+		<p id="mensajes">Mensajes:</p>
+		<p id="sumatoria">Sumatoria del arreglo:</p>
+		<p id="maximo">Maximo valor:</p>
+		<p id="divisor">Divisor:</p>
+		<p id="multiplos">Multiplos:</p>
+		<input type="button" name="add" value="Ingresar Numero" onclick="ingresarNumero('mensajes')" id="button" class="btn">
+		<input type="button" name="sum" value="Calcular Suma" onclick="calcularSuma()" id="button1" class="btn"  disabled>
+		<input type="button" name="max" value="Calcular Mayor" onclick="calcularMayor()" id="button2" class="btn" disabled>
+		<input type="button" name="div" value="Calcular divisor" onclick="divisorSuma()" id="button3" class="btn" disabled>
+		<input type="button" name="mult" value="Calcular Multiplos" onclick="mostrarMultiplos()" id="button4" class="btn" disabled>
+		<input type="button" name="reset" value="Reset" onclick="clearAll()" id="button5" class="btn" disabled>							
+	</section>
+
+	<footer>
+		<a href="mailto:davidserna08@gmail.com" target="_blank"><img src="static/img/mail.png" alt="Mail" class="social"></a>
+		<a href="https://www.facebook.com/David.A.Serna" target="_blank"><img src="static/img/fb.png" alt="Facebook" class="social"></a>
+		<a href="https://twitter.com/Dash008" target="_blank"><img src="static/img/tw.png" alt="Twitter" class="social"></a>	
+	</footer>
+
+</div>
+
+</body>
+</html>
