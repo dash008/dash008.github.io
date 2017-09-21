@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Receta</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="icon" href="static/img/portfolio_2.png">		
+	<script src="static/js/receta.js"></script>
+</head>
+<body>
+<div id="container">
+	<header>
+		<h1>Receta</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="juego.html">JUEGO</a></li>
+			<li><a href="numeros.html">NUMEROS</a></li>
+			<li><a href="receta.html">RECETA</a></li>
+		</ul>
+	</nav>
+	<section>
+		<h2> Preparando Flan</h2>
+		<div id="banner">
+			<img src="static/img/egg.png" alt="Huevo">
+			<img src="static/img/sugar.png" alt="Azucar">
+			<img src="static/img/milk.png" alt="Leche">
+			<img src="static/img/flan.png" alt="Flan">
+		</div>
+		<div id="forms_section">			
+			<form id="form_receta" class="form_flan">
+				<h3>Receta a usar</h3>
+				Huevos:  <input type="text" name="huevos" id="eggsfield_recip" value="5"> unidades<br>
+				Leche:  <input type="text" name="leche" id="milkfield_recip" value="750"> mililitros<br>
+				Azucar:  <input type="text" name="azucar" id="sugarfield_recip" value="150"> gramos<br>			
+			</form>
+			
+			<form id="form_ingredientes" class="form_flan">
+				<h3>Ingredientes disponibles</h3>
+				Huevos:  <input type="text" name="huevos_disp" id="eggsfield"> unidades <br>
+				Leche:  <input type="text" name="leche_disp" id="milkfield"> mililitros <br>
+				Azucar:  <input type="text" name="azucar_disp" id="sugarfield"> gramos <br>
+				Moldes disponibles (opcional):  <input type="text" name="moldes_disp" id="moldsfield" value="1"> <br>
+				<input type="button" name="calc" id="calcbutton" value="Calcular" onclick="calcular()" class="btn">
+			</form>
+		</div >
+		<div id="results">
+			<h3>Resultados</h3>
+			<p id="mensaje">Mensaje:</p>
+			<p id="total_flan">Cantidad Total de flanes:</p>
+			<p id="eggs_rest">Huevos restantes:</p>
+			<p id="milk_rest">Leche restante:</p>
+			<p id="sugar_rest">Azucar restante:</p>
+			<p id="time">Tiempo aproximado de preparacion:</p>
+			<p id ="caramel">Cantidad de porciones de caramelo con azucar restante:</p>
+			<input type="button" name="calcularcaramel" id="calccaramel" value="Caramelo" onclick="calcularCaramelo()" class="btn">
+		</div>
+	</section>
+
+	<footer>
+		<a href="mailto:davidserna08@gmail.com" target="_blank"><img src="static/img/mail.png" alt="Mail" class="social"></a>
+		<a href="https://www.facebook.com/David.A.Serna" target="_blank"><img src="static/img/fb.png" alt="Facebook" class="social"></a>
+		<a href="https://twitter.com/Dash008" target="_blank"><img src="static/img/tw.png" alt="Twitter" class="social"></a>	
+	</footer>
+</div>
+	
+</body>
+
+</html>

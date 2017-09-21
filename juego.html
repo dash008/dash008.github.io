@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Juego</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="icon" href="static/img/portfolio_2.png">	
+	<script src="static/js/juego.js"></script>
+</head>
+<body>
+<div id="container">
+	<header>
+		<h1>Juego</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="juego.html">JUEGO</a></li>
+			<li><a href="numeros.html">NUMEROS</a></li>
+			<li><a href="receta.html">RECETA</a></li>
+		</ul>
+	</nav>
+	<section>
+		<h2>Juego de dados "Drop Dead"</h2>
+		<form>
+			Cantidad de jugadores:  <input type="text" name="players_f" id="players_field">
+			<input type="button" name="jugar" onclick="play()" value="Jugar" id="play_button" class="btn">
+			<input type="button" id="lanzar_button" name="lanzar" onclick="lanzarnuevamente()" value="Lanzar de nuevo" class="btn" disabled>
+			<input type="button" id="reset" name="reiniciar" onclick="iniciarDeNuevo()" value="Reset" class="btn">
+		</form>
+		<img id="dado_view0" src="static/img/dados.png" alt="dado1" height="42" width="42">
+		<img  id="dado_view1" src="static/img/dados.png" alt="dado2" height="42" width="42">
+		<img  id="dado_view2" src="static/img/dados.png" alt="dado3" height="42" width="42">
+		<img  id="dado_view3" src="static/img/dados.png" alt="dado4" height="42" width="42">
+		<img  id="dado_view4" src="static/img/dados.png" alt="dado5" height="42" width="42">
+		<p id="mensajes">Mensajes:</p>
+		<div id="players_section"></div>
+	</section>
+
+	<footer>
+		<a href="mailto:davidserna08@gmail.com" target="_blank"><img src="static/img/mail.png" alt="Mail" class="social"></a>
+		<a href="https://www.facebook.com/David.A.Serna" target="_blank"><img src="static/img/fb.png" alt="Facebook" class="social"></a>
+		<a href="https://twitter.com/Dash008" target="_blank"><img src="static/img/tw.png" alt="Twitter" class="social"></a>	
+	</footer>
+
+</div>
+
+</body>
+
+</html>
