@@ -1,19 +1,8 @@
-@font-face {
-	font-family: OpenSans;
-	src: local(OpenSans), url('/static/fonts/OpenSans-Regular.ttf') format('opentype');
-}
 @font-face{
 	font-family: Raleway;
 	src: local(Raleway), url('../../static/fonts/Raleway-Regular.ttf') format('opentype');
 }
-@font-face {
-	font-family: Hind;
-	src: local(Hind), url('../../static/fonts/Hind-Regular.ttf') format('opentype');
-}
-@font-face {
-	font-family: Lobster;
-	src: local(Lobster), url('../../static/fonts/Lobster-Regular.ttf') format('opentype');
-}
+
 @font-face {
 	font-family: Roboto;
 	src: local(Roboto), url('../../static/fonts/Roboto-Regular.ttf') format('opentype');
