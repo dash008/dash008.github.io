@@ -1,42 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<title>Home</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="static/css/style.css">
-	<link rel="icon" href="static/img/portfolio_2.png">	
-</head>
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<!-- load stylesheets -->
+		<link rel="stylesheet" href="static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/style.css">	
+		<!-- load fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Assistant|Yantramanav" rel="stylesheet">
+		<!-- load jquery -->
+		<script src="static/js/jquery-3.2.1.min.js" ></script>		
+		<!-- load Bootstrap-->		
+		<script src="static/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>	
+	</head>
+	<body>
+		<div id = "container">
+			<header>
+				<h1>Gloria Holguin</h1>
+			</header>
+			<nav class="navbar navbar-toggleable-md navbar-light bg-faded">			
+				<ul>
+					<li class="nav-item"><a href="index.html">Home</a></li>
+					<li>
+					    <a href="#obrassubmenu" data-toggle="collapse" aria-expanded="false">
+							Obras
+						</a>
+					    <ul class="collapse list-unstyled" id="obrassubmenu">
+							<li class="submenuitem"><a href="#">Primeros trabajos</a></li>
+							<li class="submenuitem"><a href="masdemil.html">Mas de mil pinturas</a></li>
+							<li class="submenuitem"><a href="#">Pintura 1001</a></li>
+							<li class="submenuitem"><a href="#">Mandalas</a></li>
+							<li class="submenuitem"><a href="otrostrabajos.html">Otros trabajos</a></li>
+						</ul>
+					</li>
+					<li>
+					    <a href="#participacionessubmenu" data-toggle="collapse" aria-expanded="false">
+							Participaciones Int.
+					    <ul class="collapse list-unstyled" id="participacionessubmenu">
+							<li class="submenuitem"><a href="bienalkosovo.html">Kosovo</a></li>
+							<li class="submenuitem"><a href="exhibicionchile.html">Chile</a></li>
+							<li class="submenuitem"><a href="bienalcerveira.html">Portugal</a></li>
+						</ul>
+					</li>
+					<li>
+					    <a href="#exposicionessubmenu" data-toggle="collapse" aria-expanded="false">
+							Exposiciones
+						</a>
+					    <ul class="collapse list-unstyled" id="exposicionessubmenu">
+					    	<li class="submenuitem"><a href="#">Visiones Interiores</a></li>	
+							<li class="submenuitem"><a href="#">Por los derechos de la Mujer y en contra de la violencia de género</a></li>
+							<li class="submenuitem"><a href="#">Miradas cromáticas</a></li>
+							<li class="submenuitem"><a href="Listadocompleto.html">Listado Completo</a></li>
+						</ul>
+					</li>
+					<li>
+					    <a href="#biografiasubmenu" data-toggle="collapse" aria-expanded="false">
+							Biografia
+						</a>
+					    <ul class="collapse list-unstyled" id="biografiasubmenu">
+							<li class="submenuitem"><a href="#">Resumen</a></li>
+							<li class="submenuitem"><a href="#">Premios</a></li>					
+						</ul>
+					</li>
+					<li>
+					    <a href="#contactosubmenu" data-toggle="collapse" aria-expanded="false">
+							Contacto
+						</a>
+					    <ul class="collapse list-unstyled" id="contactosubmenu">
+							<li class="submenuitem"><a href="#">Facebook</a></li>
+							<li class="submenuitem"><a href="#">Instagram</a></li>
+							<li class="submenuitem"><a href="#">Twitter</a></li>
+							<li class="submenuitem"><a href="#">Mail</a></li>					
+						</ul>
+					</li>					
+				</ul>			
+			</nav>
+			
+			<div id="content">
+				<section id="description">
+					<h2>Artista Visual</h2>
+					<img id="profile" src="static/img/Profile.jpg" alt="Gloria Holguin" height="364" width="547">
 
-<body>
-<div id = "container">
-	<header>
-		<h1>Portafolio</h1>
-	</header>
-	<nav>
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="juego.html">JUEGO</a></li>
-			<li><a href="numeros.html">NUMEROS</a></li>
-			<li><a href="receta.html">RECETA</a></li>
-		</ul>
-	</nav>
-	<section>
-		<h2>Informacion Personal</h2>
-			<img id ="profile" src="static/img/profile.jpg" alt="Imagen de perfil">
-			<p id="personal">
-				David Serna <br>
-				Turno Mañana <br>
-				2017 <br>
-				<a href="mailto:davidserna08@gmail.com">Correo Electronico</a>
-			</p>
-	</section>
-	
-<footer>
-	<a href="mailto:davidserna08@gmail.com" target="_blank"><img src="static/img/mail.png" alt="Mail" class="social"></a>
-	<a href="https://www.facebook.com/David.A.Serna" target="_blank"><img src="static/img/fb.png" alt="Facebook" class="social"></a>
-	<a href="https://twitter.com/Dash008" target="_blank"><img src="static/img/tw.png" alt="Twitter" class="social"></a>	
-</footer>
-</div>
-</body>
+					<p>
+						“Mi vida es siempre una bella obra, un lienzo lleno de colores, que se aventura a crear, soñar y persistir en nuevos mundos“
+					</p>
 
+					<p>
+						<ul>
+							<li>Artista plástica con énfasis en pintura.</li> 
+							<li>Creadora y Gestora cultural del Proyecto: “Por los derechos de la Mujer y en contra de la violencia de género”.</li>
+							<li>Directora de Revolución de Artistas Anónimos de Colombia -  Proyecto Caballete dibujo & pincel.</li>
+							<li>Colaboradora investigativa  en el Proyecto: El grabado en el Valle del Cauca Alexandra Salazar.</li>
+							<li>Mediadora para el 41 Salón Nacional de Artista celebrado en Santiago de Cali.</li>
+						</ul>
+					</p>
+									
+						
+				</section>
+						
+			<footer>
+				<p>Todos los derechos reservados. Pagina creada por David Serna.</p>
+				<a href="mailto:davidserna08@gmail.com" target="_blank"><img src="static/img/mail.png" alt="Mail" class="social"></a>
+				<a href="https://www.facebook.com/David.A.Serna" target="_blank"><img src="static/img/fb.png" alt="Facebook" class="social"></a>
+				<a href="https://twitter.com/Dash008" target="_blank"><img src="static/img/tw.png" alt="Twitter" class="social"></a>	
+			</footer>
+			</div>
+		</div>
+	</body>
 </html>
