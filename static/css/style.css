@@ -19,7 +19,7 @@ p{
 #content{
 	float: left;
 	width: 60%;
-	margin-right: 10%;	
+	margin-right: 5%;	
 }
 #description{
 	
@@ -32,11 +32,15 @@ p{
 
 #gallery{
 	
-	margin:0 auto;
 	overflow: auto;	
 }
 #profile{
-	margin:5%;
+	margin-left:5%;
+	margin-bottom:2%;
+}
+#profilecaption{
+	margin-left:5%;
+	font-family: 'Oswald', sans-serif;
 }
 .flyerimg{
 	margin:5%;
@@ -47,14 +51,23 @@ table{
 	font-family: 'Oswald', sans-serif;
 	font-size: 12px;
 	color: gray;
+	border-spacing: 10px;
 
 }
+
+#primerostrabajostable td{
+	
+	text-align: center;
+}
+
+
 #otrostrabajostable td{
 	padding-left: 8%;
 	padding-top: 4%;
 	padding-bottom: 1%;
 	text-align: center;
 }
+
 
 #masdemiltable td{
 	padding: 2%;
@@ -106,4 +119,17 @@ footer{
 
 .submenuitem{
 	margin-left: 10%;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center; 
+	font-family: 'Oswald', sans-serif;
+	font-size: 12px;
+	color: gray;}
+
+.flex-container  div {  
+	margin: 2%;   
 }
