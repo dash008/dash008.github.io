@@ -5,7 +5,7 @@ body{
 
 header h1{
 	float: left;
-	width: 70%;
+	width: 65%;
 	margin-top: 3%;
 	margin-left:30%;
 	margin-bottom:3%;
@@ -110,10 +110,12 @@ a:visited {
 }
 
 footer{
+	font-family: 'Oswald', sans-serif;
 	clear: both;	
 	width: 45%;
 	margin:15% auto;
 	text-align: center;
+	
 
 }
 
