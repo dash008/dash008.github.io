@@ -30,10 +30,7 @@ p{
 	margin-top: 5%;
 }
 
-#gallery{
-	
-	overflow: auto;	
-}
+
 #profile{
 	margin-left:5%;
 	margin-bottom:2%;
@@ -47,33 +44,6 @@ p{
 	float: left;
 }
 
-/*table{
-	font-family: 'Oswald', sans-serif;
-	font-size: 12px;
-	color: gray;
-	border-spacing: 10px;
-
-}
-
-#primerostrabajostable td{
-	
-	text-align: center;
-}
-
-
-#otrostrabajostable td{
-	padding-left: 8%;S
-	padding-top: 4%;
-	padding-bottom: 1%;
-	text-align: center;
-}
-
-
-#masdemiltable td{
-	padding: 2%;
-	text-align: left;
-}
-*/
 h2{
 	font-family: 'Yantramanav', sans-serif;	
 }
