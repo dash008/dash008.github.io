@@ -7,23 +7,11 @@
 		<!-- load stylesheets -->
 		<link rel="stylesheet" href="../static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="../static/css/style.css">		
-		<!-- Core CSS file -->
-		<link rel="stylesheet" href="../static/js/PhotoSwipe/photoswipe.css"> 
-		<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
-		     In the folder of skin CSS file there are also:
-		     - .png and .svg icons sprite, 
-		     - preloader.gif (for browsers that do not support CSS animations) -->
-		<link rel="stylesheet" href="../static/js/PhotoSwipe/default-skin/default-skin.css">
-		<link href="https://fonts.googleapis.com/css?family=Pacifico|Assistant|Yantramanav|Oswald" rel="stylesheet">
-		<!-- load jquery -->
-		<script src="../static/js/jquery-3.2.1.min.js" ></script>		
+		<!--loadfonts--> 	
+		<link href="https://fonts.googleapis.com/css?family=Pacifico|Assistant|Yantramanav|Oswald" rel="stylesheet">				
 		<!-- load Bootstrap-->		
 		<script src="../static/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>	
-		<!--load javascript-->
-		<script src="../static/js/PhotoSwipe/photoswipe.js"></script>
-		<script src="../static/js/PhotoSwipe/photoswipe-ui-default.js"></script>
-
-		
+		<!--load javascript-->		
 		<script src="../static/js/bits.js"></script>
 
 	</head>
@@ -104,7 +92,7 @@
 							<img src="../static/img/masdemil/1_Recuerdos_Del_Pasado.jpg" 
 							alt="Recuerdos del pasado" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(1)" class="hover-shadow">
+							onclick="openModal(1);" class="hover-shadow">
 							<figcaption>
 								Recuerdos del pasado<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -118,7 +106,7 @@
 							<img src="../static/img/masdemil/2_Brisas_Marinas.jpg" 
 							alt="Brisas Marinas" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(2)" class="hover-shadow">
+							onclick="openModal(2)" class="hover-shadow">
 							<figcaption>
 								Brisas marinas<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -132,7 +120,7 @@
 							<img src="../static/img/masdemil/3_Sol_De_Medio_Dia.jpg" 
 							alt="Sol de medio dia" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(3)" class="hover-shadow">
+							onclick="openModal(3)" class="hover-shadow">
 							<figcaption>
 								Sol de medio dia<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -146,7 +134,7 @@
 							<img src="../static/img/masdemil/4_Otoño.jpg" 
 							alt="Otoño" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(4)" class="hover-shadow">
+							onclick="openModal(4)" class="hover-shadow">
 							<figcaption>
 								Otoño<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -160,7 +148,7 @@
 							<img src="../static/img/masdemil/5_Sorpresas_De_La_Vida.jpg" 
 							alt="Sorpresas de la vida" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(5)" class="hover-shadow">
+							onclick="openModal(5)" class="hover-shadow">
 							<figcaption>
 								Sorpresas de la vida<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -174,7 +162,7 @@
 							<img src="../static/img/masdemil/6_Alma_Vibrante.jpg" 
 							alt="Alma vibrante" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(6)" class="hover-shadow">
+							onclick="openModal(6)" class="hover-shadow">
 							<figcaption>
 								Alma vibrante<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -188,7 +176,7 @@
 							<img src="../static/img/masdemil/7_Tiempos.jpg" 
 							alt="Tiempos" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(7)" class="hover-shadow">
+							onclick="openModal(7))" class="hover-shadow">
 							<figcaption>
 								Tiempos<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -202,7 +190,7 @@
 							<img src="../static/img/masdemil/8_Ambiente.jpg" 
 							alt="Ambiente" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(8)" class="hover-shadow">
+							onclick="openModal(8)" class="hover-shadow">
 							<figcaption>
 								Ambiente<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -216,7 +204,7 @@
 							<img src="../static/img/masdemil/9_Vision_Interior.jpg" 
 							alt="Vision interior" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(9)" class="hover-shadow">
+							onclick="openModal(9)" class="hover-shadow">
 							<figcaption>
 								Vision interior<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -230,7 +218,7 @@
 							<img src="../static/img/masdemil/10_Naturaleza.jpg" 
 							alt="Naturaleza" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(10)" class="hover-shadow">
+							onclick="openModal(10)" class="hover-shadow">
 							<figcaption>
 								Naturaleza<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -244,7 +232,7 @@
 							<img src="../static/img/masdemil/11_Buen_Tiempo.jpg" 
 							alt="Buen Tiempo" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(11)" class="hover-shadow">
+							onclick="openModal(11)" class="hover-shadow">
 							<figcaption>
 								Buen tiempo<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -258,7 +246,7 @@
 							<img src="../static/img/masdemil/12_Mis_Ancestros.jpg" 
 							alt="Mis ancestros" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(12)" class="hover-shadow">
+							onclick="openModal(12)" class="hover-shadow">
 							<figcaption>
 								Mis ancestros<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -272,7 +260,7 @@
 							<img src="../static/img/masdemil/13_Encanto.jpg" 
 							alt="Encanto" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(13)" class="hover-shadow">
+							onclick="openModal(13)" class="hover-shadow">
 							<figcaption>
 								Encanto<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -286,7 +274,7 @@
 							<img src="../static/img/masdemil/14_Impulso.jpg" 
 							alt="Impulso" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(14)" class="hover-shadow">
+							onclick="openModal(14)" class="hover-shadow">
 							<figcaption>
 								Impulso<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -300,7 +288,7 @@
 							<img src="../static/img/masdemil/15_Culturas.jpg" 
 							alt="Culturas" 
 							height="100" width="150"
-							onclick="openModal();currentSlide(15)" class="hover-shadow">
+							onclick="openModal(15)" class="hover-shadow">
 							<figcaption>
 								Culturas<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -389,23 +377,6 @@
 					    <div class="caption-container">
 					    	<p id="caption"></p>
 					    </div>
-
-					    <!-- Thumbnail image controls -->
-					    <!-- <div class="column">
-					      <img class="demo" src="../static/img/masdemil/1_Recuerdos_Del_Pasado.jpg" onclick="currentSlide(1)" alt="Nature">
-					    </div>
-
-					    <div class="column">
-					      <img class="demo" src="../static/img/masdemil/2_Brisas_Marinas.jpg" onclick="currentSlide(2)" alt="Trolltunga">
-					    </div>
-
-					    <div class="column">
-					      <img class="demo" src="../static/img/masdemil/3_Sol_De_Medio_Dia.jpg" onclick="currentSlide(3)" alt="Mountains">
-					    </div>
-
-					    <div class="column">
-					      <img class="demo" src="../static/img/masdemil/3_Sol_De_Medio_Dia.jpg" onclick="currentSlide(4)" alt="Lights">
-					    </div> -->
 					  </div>
 					</div>
 					<!-- modal end -->

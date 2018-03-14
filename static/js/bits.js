@@ -1,6 +1,13 @@
+
+
 // Open the Modal
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
+function openModal(n) {
+	document.getElementById('myModal').style.display = "block";
+  	if (document.readyState === "complete") { 
+  		currentSlide(n);
+  		var slideIndex = 1;
+		showSlides(slideIndex); 
+  	}
 }
 
 // Close the Modal
@@ -8,8 +15,7 @@ function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
 
-var slideIndex = 0;
-showSlides(slideIndex);
+
 
 // Next/previous controls
 function plusSlides(n) {
@@ -33,20 +39,18 @@ function showSlides(n) {
     slides[i].style.display = "none";
 
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  
+    
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+ 
+  
 }
 
+var frmvalidator  = new Validator("contactform");
+	frmvalidator.addValidation("name","req","Por favor ingresa un nombre");
+	frmvalidator.addValidation("email","req","Por favor ingresa un email");
+	frmvalidator.addValidation("email","email","Por favor ingresa un email valido");
 
 
-$(document).ready(function(){
 
-	
-});
 
 
