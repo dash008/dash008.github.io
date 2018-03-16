@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
-<html>
 	<head>
 		<title>Primeros Trabajos</title>
 		<meta charset="utf-8">
 		<!-- load stylesheets -->
 		<link rel="stylesheet" href="../static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="../static/css/style.css">		
-		<!-- Core CSS file -->
-		<link rel="stylesheet" href="../static/js/PhotoSwipe/photoswipe.css"> 
-		<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
-		     In the folder of skin CSS file there are also:
-		     - .png and .svg icons sprite, 
-		     - preloader.gif (for browsers that do not support CSS animations) -->
-		<link rel="stylesheet" href="../static/js/PhotoSwipe/default-skin/default-skin.css">
-		<link href="https://fonts.googleapis.com/css?family=Pacifico|Assistant|Yantramanav|Oswald" rel="stylesheet">
+		<!--loadfonts--> 	
+		<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 		<!-- load jquery -->
 		<script src="../static/js/jquery-3.2.1.min.js" ></script>		
 		<!-- load Bootstrap-->		
 		<script src="../static/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>	
-		<!--load javascript-->
-		<script src="../static/js/PhotoSwipe/photoswipe.js"></script>
-		<script src="../static/js/PhotoSwipe/photoswipe-ui-default.js"></script>
-
-		
+		<!--load javascript-->		
 		<script src="../static/js/bits.js"></script>
-
 	</head>
 	<body>
 		<div id = "container">
 			<header>
-				<h1>Primeros Trabajos</h1>
+				<h1>Gloria M. Holgu&iacute;n Calderon</h1>
 			</header>
 			<nav>			
 				<ul>
@@ -52,27 +43,17 @@
 						</a>
 					</li>
 					<li>
-					    <a href="#exposicionessubmenu" data-toggle="collapse" aria-expanded="false">
+					    <a href="../listadocompleto.html">
 							Exposiciones
-						</a>
-					    <ul class="collapse list-unstyled" id="exposicionessubmenu">
-					    	<li class="submenuitem"><a href="#">Visiones Interiores</a></li>	
-							<li class="submenuitem"><a href="#">Por los derechos de la Mujer y en contra de la violencia de género</a></li>
-							<li class="submenuitem"><a href="#">Miradas cromáticas</a></li>
-							<li class="submenuitem"><a href="Listadocompleto.html">Listado Completo</a></li>
-						</ul>
+						</a>					    
 					</li>
 					<li>
-					    <a href="#biografiasubmenu" data-toggle="collapse" aria-expanded="false">
+					    <a href="../bio.html" >
 							Biografia
-						</a>
-					    <ul class="collapse list-unstyled" id="biografiasubmenu">
-							<li class="submenuitem"><a href="#">Resumen</a></li>
-							<li class="submenuitem"><a href="#">Premios</a></li>					
-						</ul>
+						</a>					    
 					</li>
 					<li>
-					    <a href="../contacto_form.html">
+					    <a href="../contacto/contacto_form.html">
 							Contacto
 						</a>
 					</li>					
@@ -80,79 +61,14 @@
 			</nav>
 			<div id="content">
 				<section id="description">
-					<h2></h2>
+					<h2>Primeros trabajos</h2>
 					<p>
 						Primeras pinturas realizadas mucho antes de estudiar artes plasticas. Por lo general son acuarelas sobre papel guarro, basadas en fotografias y la naturaleza.
 					</p>				
 						
 				</section>
 				<section id="gallery">
-					<!-- Root element of PhotoSwipe. Must have class pswp. -->
-					<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-					    <!-- Background of PhotoSwipe. 
-					         It's a separate element as animating opacity is faster than rgba(). -->
-					    <div class="pswp__bg"></div>
-
-					    <!-- Slides wrapper with overflow:hidden. -->
-					    <div class="pswp__scroll-wrap">
-
-					        <!-- Container that holds slides. 
-					            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-					            Don't modify these 3 pswp__item elements, data is added later on. -->
-					        <div class="pswp__container">
-					            <div class="pswp__item"></div>
-					            <div class="pswp__item"></div>
-					            <div class="pswp__item"></div>
-					        </div>
-
-					        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-					        <div class="pswp__ui pswp__ui--hidden">
-
-					            <div class="pswp__top-bar">
-
-					                <!--  Controls are self-explanatory. Order can be changed. -->
-
-					                <div class="pswp__counter"></div>
-
-					                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-					                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-					                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-					                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-					                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-					                <!-- element will get class pswp__preloader--active when preloader is running -->
-					                <div class="pswp__preloader">
-					                    <div class="pswp__preloader__icn">
-					                      <div class="pswp__preloader__cut">
-					                        <div class="pswp__preloader__donut"></div>
-					                      </div>
-					                    </div>
-					                </div>
-					            </div>
-
-					            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-					                <div class="pswp__share-tooltip"></div> 
-					            </div>
-
-					            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-					            </button>
-
-					            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-					            </button>
-
-					            <div class="pswp__caption">
-					                <div class="pswp__caption__center"></div>
-					            </div>
-
-					        </div>
-
-					    </div>
-					</div>
-
+				<h2>Galeria</h2>
 					<!-- Galery-->
 					<div class="flex-container">
 						<div>
@@ -170,7 +86,7 @@
 							<figure>
 								<img src="../static/img/primerostrabajos/2.jpg" 
 								alt="Segunda Imagen" 
-								height="230" width="322.5">									
+								height="230" width="322">									
 								<figcaption>
 								Sin titulo<br>
 								Acuarela <br> 											
@@ -192,7 +108,7 @@
 							<figure>
 								<img src="../static/img/primerostrabajos/4.jpg" 
 								alt="Cuarta Imagen" 
-								height="251.17" width="206">
+								height="251" width="206">
 								<figcaption>
 								Sin titulo<br>
 								Acuarela <br>
@@ -203,14 +119,14 @@
 							<figure>
 								<img src="../static/img/primerostrabajos/5.jpg" 
 								alt="Quinta Imagen" 
-								height="251.17" width="206">
+								height="251" width="206">
 								<figcaption>
 								Sin titulo<br>
 								Acuarela <br>
 								</figcaption>
 							</figure>
-						<div>
-				</div>	
+						</div>
+					</div>	
 				</section>
 				<footer>
 								<p>Todos los derechos reservados.<br> Pagina creada por David Serna.</p>

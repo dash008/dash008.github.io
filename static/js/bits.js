@@ -45,12 +45,8 @@ function showSlides(n) {
   
 }
 
-var frmvalidator  = new Validator("contactform");
-	frmvalidator.addValidation("name","req","Por favor ingresa un nombre");
-	frmvalidator.addValidation("email","req","Por favor ingresa un email");
-	frmvalidator.addValidation("email","email","Por favor ingresa un email valido");
 
 
 
 
-
+  

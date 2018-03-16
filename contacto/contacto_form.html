@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Contacto</title>
+		<meta charset="utf-8">
+		<!-- load stylesheets -->
+		<link rel="stylesheet" href="../static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/style.css">	
+		<!-- load fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+		<!-- load jquery -->
+		<script src="../static/js/jquery-3.2.1.min.js" ></script>		
+		<!-- load Bootstrap-->		
+		<script src="../static/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>		
+	</head>
+	<body>
+		<div id = "container">
+			<header>
+				<h1>Gloria M. Holgu&iacute;n Calderon</h1>
+			</header>
+			<nav>			
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li>
+					    <a href="../obras/index.html" >
+							Obras
+						</a>					    
+					</li>
+					<li>
+					    <a href="../participacionesint/index.html">
+							Participaciones Int.
+						</a>					    
+					</li>
+					<li>
+					    <a href="../listadocompleto.html">
+							Exposiciones
+						</a>					    
+					</li>
+					<li>
+					    <a href="../bio.html" >
+							Biografia
+						</a>					    
+					</li>
+					<li>
+					    <a href="contacto_form.html" class="active">
+							Contacto
+						</a>
+					    <ul>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Instagram</a></li>
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Mail</a></li>						
+						</ul>
+					</li>					
+				</ul>			
+			</nav>
+			
+			<div id="content">
+				<section>
+					<h2>Formulario de Contacto</h2>
+					<form method="post" name="contact_form" action="contact-form-handler.php" >
+					    <div class="form-check">
+							<label class="form-check-label">
+        					<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="Queja" checked>
+        						Queja
+      						</label>
+      						<label class="form-check-label">
+        					<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="Mensaje">
+        						Mensaje
+      						</label>
+    					</div>
+
+						<div class="form-group">
+							<label id="label_name" for="input_name">Nombre</label>
+					    	<input id="input_name" type="text" name="name" class="form-control" required="true">
+						    <label id="label_email" for="input_email" >Email</label>
+						    <input id="input_email" type="email" name="email" class="form-control" required="true">
+						    <label id="label_message" for="input_message">Mensaje:</label>
+						    <textarea id="input_message" name="message" class="form-control" required="true" 
+						    rows="10" cols="30"></textarea>
+						</div>
+
+						<label class="custom-control custom-checkbox">
+						  <input type="checkbox" class="custom-control-input" name="notifications">
+						  <span class="custom-control-indicator"></span>
+						  <span class="custom-control-description">Deseo recibir notificaciones por email acerca de nuevas obras de la artista</span>
+						</label>
+						<br>
+						<input type="submit" value="Submit" id="input_submit">
+					</form>
+					
+									
+				</section>
+						
+			<footer>
+				<p>Todos los derechos reservados.<br> Pagina creada por David Serna.</p>
+				<a href="mailto:davidserna08@gmail.com" target="_blank"><img src="../static/img/iconos/s-mail.png" alt="Mail" class="social"></a>
+				<a href="https://www.facebook.com/David.A.Serna" target="_blank"><img src="../static/img/iconos/s-fb.png" alt="Facebook" class="social"></a>
+				<a href="https://twitter.com/Dash008" target="_blank"><img src="../static/img/iconos/s-tw.png" alt="Twitter" class="social"></a>	
+			</footer>
+			</div>
+		</div>
+	</body>
+</html>

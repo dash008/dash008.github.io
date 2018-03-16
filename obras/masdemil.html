@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<html>
 	<head>
 		<title>Mas de mil pinturas</title>
 		<meta charset="utf-8">
@@ -8,17 +7,21 @@
 		<link rel="stylesheet" href="../static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="../static/css/style.css">		
 		<!--loadfonts--> 	
-		<link href="https://fonts.googleapis.com/css?family=Pacifico|Assistant|Yantramanav|Oswald" rel="stylesheet">				
+		<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<!-- load jquery -->
+		<script src="../static/js/jquery-3.2.1.min.js" ></script>		
 		<!-- load Bootstrap-->		
 		<script src="../static/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>	
 		<!--load javascript-->		
 		<script src="../static/js/bits.js"></script>
-
 	</head>
 	<body>
 		<div id = "container">
 			<header>
-				<h1>Mas de mil pinturas en manos desconocidas</h1>
+				<h1>Gloria M. Holgu&iacute;n Calderon</h1>
 			</header>
 			<nav>			
 				<ul>
@@ -40,27 +43,17 @@
 						</a>
 					</li>
 					<li>
-					    <a href="#exposicionessubmenu" data-toggle="collapse" aria-expanded="false">
+					    <a href="../listadocompleto.html" >
 							Exposiciones
-						</a>
-					    <ul class="collapse list-unstyled" id="exposicionessubmenu">
-					    	<li class="submenuitem"><a href="#">Visiones Interiores</a></li>	
-							<li class="submenuitem"><a href="#">Por los derechos de la Mujer y en contra de la violencia de género</a></li>
-							<li class="submenuitem"><a href="#">Miradas cromáticas</a></li>
-							<li class="submenuitem"><a href="Listadocompleto.html">Listado Completo</a></li>
-						</ul>
+						</a>					    
 					</li>
 					<li>
-					    <a href="#biografiasubmenu" data-toggle="collapse" aria-expanded="false">
+					    <a href="../bio.html" >
 							Biografia
-						</a>
-					    <ul class="collapse list-unstyled" id="biografiasubmenu">
-							<li class="submenuitem"><a href="#">Resumen</a></li>
-							<li class="submenuitem"><a href="#">Premios</a></li>					
-						</ul>
+						</a>					    
 					</li>
 					<li>
-					    <a href="../contacto_form.html">
+					    <a href="../contacto/contacto_form.html">
 							Contacto
 						</a>  
 					</li>					
@@ -68,13 +61,14 @@
 			</nav>
 			<div id="content">
 				<section id="description">
-					<h2>Más de mil?</h2>
+					<h2>Más de mil pinturas en manos desconocidas</h2>
 					<p>
 						Inicie  este nuevo proyecto el cual consiste en  realizar una pintura en pequeño formato por mas de 1000 dias, cada dia una, el cual debe quedar en las manos de alguien ese mismo dia de elaborada. La experiencia estética  pretende  conmover al espectador. Se muestran aqui las primeras 15 de la serie.
 					</p>				
 						
 				</section>
 				<section id="gallery">
+					<h2> Galeria </h2>
 					<!-- Galery-->
 					<div class="flex-container">
 						<div>
@@ -166,7 +160,7 @@
 							<img src="../static/img/masdemil/7_Tiempos.jpg" 
 							alt="Tiempos" 
 							height="100" width="150"
-							onclick="openModal(7))" class="hover-shadow">
+							onclick="openModal(7)" class="hover-shadow">
 							<figcaption>
 								Tiempos<br>
 								Tecnica mixta sobre papel guarro<br>
@@ -297,66 +291,68 @@
 
 						<div class="mySlides">
 							<div class="numbertext">1 / 15</div>
-							<img src="../static/img/masdemil/1_Recuerdos_Del_Pasado.jpg" style="width:100%">
+							<img src="../static/img/masdemil/1_Recuerdos_Del_Pasado.jpg" style="width:100%" alt="Recuerdos del pasado">
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">2 / 15</div>
-							<img src="../static/img/masdemil/2_Brisas_Marinas.jpg" style="width:100%">
+							<img src="../static/img/masdemil/2_Brisas_Marinas.jpg" style="width:100%"
+							alt="Brisas Marinas">
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">3 / 15</div>
-							<img src="../static/img/masdemil/3_Sol_De_Medio_Dia.jpg" style="width:100%">
+							<img src="../static/img/masdemil/3_Sol_De_Medio_Dia.jpg" style="width:100%"
+							alt="Sol de medio dia">
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">4 / 15</div>
-							<img src="../static/img/masdemil/4_Otoño.jpg" style="width:100%">
+							<img src="../static/img/masdemil/4_Otoño.jpg" style="width:100%" alt="Otoño">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">5 / 15</div>
-							<img src="../static/img/masdemil/5_Sorpresas_De_La_Vida.jpg" style="width:100%">
+							<img src="../static/img/masdemil/5_Sorpresas_De_La_Vida.jpg" style="width:100%" alt="Sorpresas de la vida">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">6 / 15</div>
-							<img src="../static/img/masdemil/6_Alma_Vibrante.jpg" style="width:100%">
+							<img src="../static/img/masdemil/6_Alma_Vibrante.jpg" style="width:100%" alt="Alma vibrante">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">7 / 15</div>
-							<img src="../static/img/masdemil/7_Tiempos.jpg" style="width:100%">
+							<img src="../static/img/masdemil/7_Tiempos.jpg" style="width:100%" alt="Tiempos">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">8 / 15</div>
-							<img src="../static/img/masdemil/8_Ambiente.jpg" style="width:100%">
+							<img src="../static/img/masdemil/8_Ambiente.jpg" style="width:100%" alt="Ambiente">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">9 / 15</div>
-							<img src="../static/img/masdemil/9_Vision_Interior.jpg" style="width:100%">
+							<img src="../static/img/masdemil/9_Vision_Interior.jpg" style="width:100%" alt="Vision Interior">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">10 / 15</div>
-							<img src="../static/img/masdemil/10_Naturaleza.jpg" style="width:100%">
+							<img src="../static/img/masdemil/10_Naturaleza.jpg" style="width:100%" alt="Naturaleza">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">11 / 15</div>
-							<img src="../static/img/masdemil/11_Buen_Tiempo.jpg" style="width:100%">
+							<img src="../static/img/masdemil/11_Buen_Tiempo.jpg" style="width:100%" alt="Buen tiempo">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">12 / 15</div>
-							<img src="../static/img/masdemil/12_Mis_Ancestros.jpg" style="width:100%">
+							<img src="../static/img/masdemil/12_Mis_Ancestros.jpg" style="width:100%" alt="Mis ancestros">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">13 / 15</div>
-							<img src="../static/img/masdemil/13_Encanto.jpg" style="width:100%">
+							<img src="../static/img/masdemil/13_Encanto.jpg" style="width:100%" alt="Encanto">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">14 / 15</div>
-							<img src="../static/img/masdemil/14_Impulso.jpg" style="width:100%">
+							<img src="../static/img/masdemil/14_Impulso.jpg" style="width:100%" alt="Impulso">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">15 / 15</div>
-							<img src="../static/img/masdemil/15_Culturas.jpg" style="width:100%">
+							<img src="../static/img/masdemil/15_Culturas.jpg" style="width:100%" alt="Culturas">
 						</div>
 
 					    <!-- Next/previous controls -->

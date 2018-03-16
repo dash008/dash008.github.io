@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<html>
 	<head>
 		<title>Home</title>
 		<meta charset="utf-8">
@@ -8,7 +7,8 @@
 		<link rel="stylesheet" href="static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="static/css/style.css">	
 		<!-- load fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Assistant|Yantramanav" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
 		<!-- load jquery -->
 		<script src="static/js/jquery-3.2.1.min.js" ></script>		
 		<!-- load Bootstrap-->		
@@ -17,11 +17,11 @@
 	<body>
 		<div id = "container">
 			<header>
-				<h1>Gloria M. Holgu&iacuten Calderon</h1>
+				<h1>Gloria M. Holgu&iacute;n Calderon</h1>
 			</header>
 			<nav>			
 				<ul>
-					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html" class="active">Home</a></li>
 					<li>
 					    <a href="obras/index.html" >
 							Obras
@@ -47,34 +47,32 @@
 						</ul>
 					</li>
 					<li>
-					    <a href="contacto_form.html" class="active">
+					    <a href="contacto_form.html">
 							Contacto
 						</a>
-					    <ul>
-							<li><a href="#">Facebook</a></li>
-							<li><a href="#">Instagram</a></li>
-							<li><a href="#">Twitter</a></li>
-							<li><a href="#">Mail</a></li>						
-						</ul>
 					</li>					
 				</ul>			
 			</nav>
 			
 			<div id="content">
-				<section >
-					<h2>Formulario de Contacto</h2>
+				<section id="description">
+					<h2>Artista Visual</h2>
 
-					<form method="post" name="contact_form" action="contact-form-handler.php">					    
-					    <label id="label_name">Nombre</label>
-					    <input type="text" name="name">
-					    <label id="label_email">Email</label>
-					    <input type="text" name="email">
-					    <label id="label_message">Mensaje:</label>
-					    <textarea name="message"></textarea>
-					    <input type="submit" value="Submit">
-					</form>
 					
-									
+					<figure>
+						<img id="profile" src="static/img/Profile.jpg" alt="Gloria Holguin" height="400" width="600">
+						<figcaption id="profilecaption">
+							“Mi vida es siempre una bella obra, un lienzo lleno de colores, que se aventura a crear, soñar y persistir en nuevos mundos“
+						</figcaption>
+					</figure>				
+					
+					<ul>
+						<li>Artista plástica con énfasis en pintura.</li> 
+						<li>Creadora y Gestora cultural del Proyecto: “Por los derechos de la Mujer y en contra de la violencia de género”.</li>
+						<li>Directora de Revolución de Artistas Anónimos de Colombia -  Proyecto Caballete dibujo & pincel.</li>								
+						<li>Mediadora para el 41 Salón Nacional de Artista celebrado en Santiago de Cali.</li>
+					</ul>
+											
 				</section>
 						
 			<footer>

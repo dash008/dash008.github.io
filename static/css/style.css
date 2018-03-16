@@ -1,6 +1,9 @@
 body{
 	
 	font-family: 'Yantramanav', sans-serif;
+	background-image: url('../img/background1.png'),url('../img/background2.png');	    
+    background-position: left top,right center;
+    background-repeat:  no-repeat,repeat-y;
 }
 
 header h1{
@@ -15,20 +18,23 @@ header h1{
 }
 p{
 	font-size: 18px;
+	color: black;
 }
 #content{
 	float: left;
 	width: 60%;
-	margin-right: 5%;	
+	margin-right: 5%;
+		
 }
-#description{
+/*#description{
 	
 	font-family: 'Assistant', sans-serif;
 	text-align: justify;		
 }
 .flyerdescription{
 	margin-top: 5%;
-}
+}*/
+
 
 
 #profile{
@@ -230,4 +236,8 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.form-group{
+	width: 40%;
 }
