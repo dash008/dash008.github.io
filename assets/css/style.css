@@ -396,7 +396,10 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .custom-navbar .navbar-brand {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.7rem;
+  -webkit-text-stroke: 1.5px black;
+  text-transform: uppercase;
 }
 
 /* Burger */
